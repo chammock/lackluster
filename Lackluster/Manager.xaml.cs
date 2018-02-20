@@ -22,6 +22,7 @@ namespace Lackluster
         public Manager()
         {
             InitializeComponent();
+            //Test Here
         }
 
 
