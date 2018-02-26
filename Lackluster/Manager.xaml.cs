@@ -25,6 +25,26 @@ namespace Lackluster
             //Test Here
         }
 
+        private void btnLogOut_Click(object sender, RoutedEventArgs e)
+        {
+            //Create instance of Manager window to control objects
+            WindowLogIn login = new WindowLogIn();
+
+            //Open the login window and close the manager window
+            login.Show();
+            this.Close();
+        }
+
+        private void btnReturnScan_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void txtTest_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            Console.WriteLine("Worked");
+        }
+
 
     }
 }
