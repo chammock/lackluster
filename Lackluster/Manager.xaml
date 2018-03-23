@@ -39,23 +39,23 @@
                             </GridView>
                         </ListView.View>
                     </ListView>
-                    <TextBox x:Name="txtScanEntry" HorizontalAlignment="Left" Height="20" Margin="10,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="562" PreviewKeyDown="txtScanEntry_PreviewKeyDown" Visibility="Hidden"/>
+                    <TextBox x:Name="txtRentalEntry" HorizontalAlignment="Left" Height="20" Margin="10,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="562" PreviewKeyDown="txtScanEntry_PreviewKeyDown" Visibility="Hidden"/>
                 </Grid>
             </TabItem>
             <TabItem x:Name="tbReturn" Header="RETURN" FontWeight="Bold" FontSize="14" Width="100">
                 <Grid Background="#FFE5E5E5">
-                    <ListBox x:Name="lstReturn" HorizontalAlignment="Left" Height="356" Margin="12,43,0,0" VerticalAlignment="Top" Width="560" FontWeight="Normal" FontSize="12" RenderTransformOrigin="0.5,0.5">
-                        <ListBox.RenderTransform>
-                            <TransformGroup>
-                                <ScaleTransform/>
-                                <SkewTransform AngleX="0.2"/>
-                                <RotateTransform/>
-                                <TranslateTransform X="-0.497"/>
-                            </TransformGroup>
-                        </ListBox.RenderTransform>
-                    </ListBox>
-                    <Button x:Name="btnStartReturn" Content="Start Return" HorizontalAlignment="Left" Margin="617,43,0,0" VerticalAlignment="Top" Width="150" Height="77" FontSize="18" HorizontalContentAlignment="Center"/>
-                    <Button x:Name="btnCompleteReturn" Content="Complete Return" HorizontalAlignment="Left" Margin="617,158,0,0" VerticalAlignment="Top" Width="150" Height="77" FontSize="18"/>
+                    <Button x:Name="btnStartReturn" Content="Start Return" HorizontalAlignment="Left" Margin="617,43,0,0" VerticalAlignment="Top" Width="150" Height="77" FontSize="18" HorizontalContentAlignment="Center" Click="btnStartReturn_Click"/>
+                    <Button x:Name="btnCompleteReturn" Content="Complete Return" HorizontalAlignment="Left" Margin="617,158,0,0" VerticalAlignment="Top" Width="150" Height="77" FontSize="18" Click="btnCompleteReturn_Click"/>
+                    <ListView x:Name="lstReturn" HorizontalAlignment="Left" Height="353" Margin="10,43,0,0" VerticalAlignment="Top" Width="587" Foreground="Black">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="UPC" DisplayMemberBinding="{Binding upc}" Width="150"/>
+                                <GridViewColumn Header="Title" DisplayMemberBinding="{Binding movieTitle}" Width="350"/>
+                                <!--<GridViewColumn Header="Price" DisplayMemberBinding="{Binding moviePrice}" Width="50"/>-->
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                    <TextBox x:Name="txtReturnEntry" HorizontalAlignment="Left" Height="20" Margin="10,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="587" PreviewKeyDown="txtReturnEntry_PreviewKeyDown" Visibility="Hidden"/>
                 </Grid>
             </TabItem>
             <TabItem x:Name="tbMovies" FontWeight="Bold" FontSize="14" Width="100" Header="MOVIES">
