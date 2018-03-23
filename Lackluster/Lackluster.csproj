@@ -34,8 +34,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.10.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -61,6 +63,7 @@
     <Compile Include="Manager.xaml.cs">
       <DependentUpon>Manager.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Movie.cs" />
     <Compile Include="WindowLogIn.xaml.cs">
       <DependentUpon>WindowLogIn.xaml</DependentUpon>
     </Compile>
