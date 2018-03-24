@@ -14,16 +14,16 @@
             <TabItem x:Name="tbRent" Header="RENT" FontSize="14" FontWeight="Bold" Width="100">
                 <Grid Background="#FFE5E5E5">
                     <Label x:Name="label" Content="Enter Phone Number:" HorizontalAlignment="Left" Margin="10,20,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="12"/>
-                    <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="139,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="143"/>
-                    <Button x:Name="btnLookup" Content="Look Up" HorizontalAlignment="Left" Margin="297,23,0,0" VerticalAlignment="Top" Width="75" FontSize="12" FontWeight="Bold"/>
+                    <TextBox x:Name="txtCustomerPhoneNumberSearch" HorizontalAlignment="Left" Height="23" Margin="139,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="143"/>
+                    <Button x:Name="btnCustomerLookup" Content="Look Up" HorizontalAlignment="Left" Margin="297,23,0,0" VerticalAlignment="Top" Width="75" FontSize="12" FontWeight="Bold" Click="btnCustomerLookup_Click"/>
                     <Label x:Name="lblFirstName" Content="First Name: " HorizontalAlignment="Left" Margin="10,66,0,0" VerticalAlignment="Top" FontSize="12" FontWeight="Bold"/>
-                    <TextBox x:Name="txtFirstName" HorizontalAlignment="Left" Height="23" Margin="88,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="194"/>
+                    <TextBox x:Name="txtCustomerFirstName" HorizontalAlignment="Left" Height="23" Margin="88,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="194"/>
                     <Label x:Name="lblLastName" Content="Last Name: " HorizontalAlignment="Left" Margin="10,94,0,0" VerticalAlignment="Top" FontSize="12" FontWeight="Bold"/>
-                    <TextBox x:Name="txtLastName" HorizontalAlignment="Left" Height="23" Margin="88,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="194"/>
+                    <TextBox x:Name="txtCustomerLastName" HorizontalAlignment="Left" Height="23" Margin="88,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="194"/>
                     <Label x:Name="lblPhoneNumber" Content="Phone Number: " HorizontalAlignment="Left" Margin="337,63,0,0" VerticalAlignment="Top" FontSize="12" FontWeight="Bold"/>
-                    <TextBox x:Name="txtPhoneNumber" HorizontalAlignment="Left" Height="23" Margin="438,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="121"/>
+                    <TextBox x:Name="txtCustomerPhoneNumber" HorizontalAlignment="Left" Height="23" Margin="438,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="121"/>
                     <Label x:Name="lblEmail" Content="Email:" HorizontalAlignment="Left" Margin="337,91,0,0" VerticalAlignment="Top" FontSize="12" FontWeight="Bold"/>
-                    <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Height="23" Margin="383,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176"/>
+                    <TextBox x:Name="txtCustomerEmail" HorizontalAlignment="Left" Height="23" Margin="383,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176"/>
                     <Button x:Name="btnStartRental" Content="Start Rental" HorizontalAlignment="Left" Margin="614,180,0,0" VerticalAlignment="Top" Width="150" Height="77" FontSize="18" HorizontalContentAlignment="Center" Click="btnStartRental_Click"/>
                     <Label x:Name="lblTotal" Content="Total Customer Owes:" HorizontalAlignment="Left" Margin="632,20,0,0" VerticalAlignment="Top" FontSize="12" FontWeight="Bold"/>
                     <TextBox x:Name="txtTotal" HorizontalAlignment="Left" Height="62" Margin="637,46,0,0" VerticalAlignment="Top" Width="120" FontSize="20" FontWeight="Normal" HorizontalContentAlignment="Center" Text="$0.00" VerticalContentAlignment="Center"/>

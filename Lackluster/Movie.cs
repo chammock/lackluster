@@ -78,7 +78,8 @@ namespace Lackluster
 
                     //Set isMovie to true since we found a movie in the database
                     this.isMovie = true;
-                } else
+                }
+                else
                 {
                     //Set isMovie to false since we did not find a movie in the database
                     this.isMovie = false;

@@ -176,6 +176,28 @@ namespace Lackluster
 
             //TODO - Complete the Return Process
         }
+
+        private void btnCustomerLookup_Click(object sender, RoutedEventArgs e)
+        {
+            //Pass the phone number to the Customer object to create a new object
+            Customer searchCustomer = new Customer(txtCustomerPhoneNumberSearch.Text);
+
+            if (searchCustomer.IsCustomer)
+            {
+                //Put the data in the rent boxes
+                txtCustomerFirstName.Text = searchCustomer.CustomerFname;
+                txtCustomerLastName.Text = searchCustomer.CustomerLname;
+                txtCustomerPhoneNumber.Text = searchCustomer.CustomerPhoneNumber;
+                txtCustomerEmail.Text = searchCustomer.CustomerEmail;
+            }
+            else
+            {
+                //Phone number not found in database
+                MessageBox.Show("Phone number not found");
+            }
+
+
+        }
     }
 }
 
